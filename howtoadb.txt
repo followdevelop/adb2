@@ -1,0 +1,115 @@
+https://developer.android.com/studio/run/oem-usb#Drivers
+
+ ADB(1) adb Manuals ADB(1) NAME adb - Android Debug Bridge SYNOPSIS adb [-d|-e|-s serialNumber] command DESCRIPTION Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device. It is a client-server program that includes three components: · A client, which sends commands. The client runs on your development machine. You can invoke a client from a shell by issuing an adb command. Other Android tools such as DDMS also create adb clients. · A daemon, which runs commands on a device. The daemon runs as a background process on each emulator or device instance. · A server, which manages communication between the client and the daemon. The server runs as a background process on your development machine. If
+ADB(1) adb Manuals ADB(1) NAME adb - Android Debug Bridge SYNOPSIS adb [-d|-e|-s serialNumber] command DESCRIPTION Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device. It is a client-server program that includes three components: · A client, which sends commands. The client runs on your development machine. You can invoke a client from a shell by issuing an adb command. Other Android tools such as DDMS also create adb clients. · A daemon, which runs commands on a device. The daemon runs as a background process on each emulator or device instance. · A server, which manages communication between the client and the daemon. The server runs as a background process on your development machine. If
+ADB(1)                                                 adb Manuals                                                ADB(1)
+
+NAME
+       adb - Android Debug Bridge
+
+COMMANDS
+       adb devices [-l]
+              List all connected devices.  -l will also list device qualifiers.
+
+       adb connect host[:port]
+              Connect to a device via TCP/IP.  Port 5555 is used by default if no port number is specified.
+       adb disconnect [host[:port]]
+              Disconnect from a TCP/IP device.  Port 5555 is used by default if no port number is specified.  Using this
+
+   Device commands
+       adb push local... remote
+       adb pull [-a] remote [local]
+       adb sync [-l] [directory]
+
+       adb emu command
+       adb logcat [filter-spec]
+       adb forward --list
+       adb forward local remote
+
+       · tcp:port
+
+       adb install [-lrtsdg] file
+       adb install-multiple [-lrtsdpg] file...
+
+       adb wait-for-[-transport]-state
+       adb start-server
+       adb kill-server
+       https://developer.android.com/tools/help/adb.html
+
+
+
+
+
+
+--------------------------------------------------una pagina web expuso estos trucos
+
+https://www.androidpit.es/que-es-adb-comandos-mas-importantes#Linux
+
+adb reboot
+adb reboot-recovery
+adb reboot-bootloader
+adb logcat > logcat.txt
+adb push c:\carpeta\Midocumento.pdf /sdcard/downloads
+adb pull /sdcard/downloads/dokument.pdf c:\usuario\escritorio\carpeta 
+
+adb shell screencap -p /sdcard/screenshot.png 
+adb pull /sdcard/screenshot.png 
+adb shell rm /sdcard/screenshot.png
+
+adb sideload update.zip
+adb install "C:\Archivos de programa\WhatsApp.apk"
+
+adb backup -f FullBackup.ab -apk -all
+adb help
+
+------------------------------
+http://codetheory.in/android-debug-bridge-adb-wireless-debugging-over-wi-fi/
+
+        adb usb
+  681  adb devices
+  682  adb tcpip 5556
+  684  adb connect 192.168.0.9:5556
+  685  adb devices
+
+
+http://codetheory.in/android-debug-bridge-adb-wireless-debugging-over-wi-fi/
+
+
+
+adb shell screencap -p /sdcard/screenshot.png 
+adb pull /sdcard/screenshot.png 
+adb shell rm /sdcard/screenshot.png
+
+
+adb shell
+
+STEP 2.
+
+ip -f inet addr show wlan0------------------------
+-----------------------
+adb shell pm list packages
+adb backup -f FullBackup.ab -apk -com.android.shell
+com.android.shell
+
+https://rootear.com/android/comandos-adb-basicos
+adb shell screenrecord /sdcard/example.mp4
+
+https://github.com/jackpal/Android-Terminal-Emulator/wiki/Android-Shell-Command-Reference
+
+
+196  apt-get install adb
+
+adb shell screencap -p /sdcard/screenshot.png && adb pull /sdcard/screenshot.png 
+adb shell rm /sdcard/screenshot.png
+
+adb push c:\carpeta\Midocumento.pdf /sdcard/downloads
+
+
+adb kill-server
+±
+
+adb shell pull /sdcard/example
+
+adb shell screencap -p /sdcard/screenshot.png && adb pull /sdcard/screenshot.png 
+adb shell screenrecord /sdcard/example.mp4
+adb shell pull /sdcard/example.mp4
